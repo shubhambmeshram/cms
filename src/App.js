@@ -1,19 +1,22 @@
-// import logo from "./logo.svg";
 import "./App.css";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// import Navbar from "./component/Navbar";
-// import {BrowserRouter} from 'react-router-dom'
-import Header from "./component/Header";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Tiles from "./component/Tiles";
+import { Routes, Route } from "react-router-dom";
+import OpdDetails from "./component/OpdDetails";
+import Header from "./component/Header";
+import UserData from "./component/UserData";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Tiles/>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Tiles />}></Route>
+        <Route path="/opd" element={<OpdDetails />}></Route>
+        <Route path="/UserData" element={<UserData/>}></Route>
+      </Routes>
+    </>
   );
-
 }
 
 export default App;

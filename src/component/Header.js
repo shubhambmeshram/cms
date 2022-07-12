@@ -1,17 +1,21 @@
 import React from "react";
 import { Navbar, Container, Nav, } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#home">CMS</Navbar.Brand>
+          <Navbar.Brand href="javascript:void(0)">CMS</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">About Us</Nav.Link>
+              {/* <Nav.Link to="home" href="Tiles">Home</Nav.Link>
+              <Nav.Link to="opd" href="opd">About Us</Nav.Link> */}
+              <NavLink to='/'>home</NavLink>
+              <NavLink to='/opd'>OPD</NavLink>
+              <NavLink to='/UserData'>UserData</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
