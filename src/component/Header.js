@@ -16,6 +16,8 @@ function Header() {
               <NavLink to='/'>home</NavLink>
               <NavLink to='/opd'>OPD</NavLink>
               <NavLink to='/UserData'>UserData</NavLink>
+              <NavLink to='/About'>About</NavLink>
+              {/* <NavLink to='/Spinner'>Spinner</NavLink> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

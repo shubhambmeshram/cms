@@ -6,7 +6,7 @@ function UserData() {
   //   const [image, setImage] = React.useState([]);
 
   React.useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/photos").then((res) => {
+    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
       setPost(res.data);
       console.log(res.data);
     });
@@ -22,10 +22,10 @@ function UserData() {
             <>
               <div className="col-md-4">
                 <div class="card">
-                  <img src={post.url} class="card-img-top" alt="..."  loading="lazy"/>
+                  <img src="https://dummyimage.com/600x400/000/fff" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">{post.title}</h5>
-                    <p class="card-text">{post.id}</p>
+                    <h5 class="card-title">{post.name}</h5>
+                    <h6 class="card-text">{post.email}</h6>
                   </div>
                 </div>
               </div>
