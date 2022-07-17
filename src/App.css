@@ -1,5 +1,5 @@
 body {
- background-color: #1d2630 !important;
+  background-color: #1d2630 !important;
 }
 
 p {
@@ -14,6 +14,7 @@ p {
   height: 40vmin;
   pointer-events: none;
 }
+
 #heart {
   color: green;
 }
@@ -44,6 +45,7 @@ p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -55,7 +57,7 @@ p {
   text-decoration: none;
 }
 
-.navbar-nav .active{
+.navbar-nav .active {
   padding: 10px;
   color: black;
   font-weight: 700;
@@ -67,16 +69,18 @@ p {
   from {
     transform: rotate(0);
   }
-  to{
+
+  to {
     transform: rotate(359deg);
   }
 }
 
 @keyframes spin3D {
   from {
-    transform: rotate3d(.5,.5,.5, 360deg);
+    transform: rotate3d(.5, .5, .5, 360deg);
   }
-  to{
+
+  to {
     transform: rotate3d(0deg);
   }
 }
@@ -85,15 +89,19 @@ p {
   0% {
     transform: rotate(0);
   }
+
   25% {
     transform: rotate(90deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   75% {
     transform: rotate(270deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -103,15 +111,19 @@ p {
   0% {
     transform: rotate(45deg);
   }
+
   25% {
     transform: rotate(-45deg);
   }
+
   50% {
     transform: rotate(-135deg);
   }
+
   75% {
     transform: rotate(-225deg);
   }
+
   100% {
     transform: rotate(-315deg);
   }
@@ -122,17 +134,22 @@ p {
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: .25;
     transform: scale(.75);
   }
 }
 
+.card {
+  margin-bottom: 15px;
+}
+
 .spinner-body {
- height: 90vh;
- display: grid;
- justify-content: space-evenly;
- align-items: center;
+  height: 90vh;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .spinner-box {
@@ -155,8 +172,8 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgb(63,249,220);
-  background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+  background: rgb(63, 249, 220);
+  background: linear-gradient(0deg, rgba(63, 249, 220, 0.1) 33%, rgba(63, 249, 220, 1) 100%);
   animation: spin3D 1.8s linear 0s infinite;
 }
 
@@ -198,8 +215,8 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgb(63,249,220);
-  background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+  background: rgb(63, 249, 220);
+  background: linear-gradient(0deg, rgba(63, 249, 220, 0.1) 33%, rgba(63, 249, 220, 1) 100%);
   animation: spin .8s linear 0s infinite;
 }
 
@@ -232,7 +249,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(63,249,220);
+  background: rgb(63, 249, 220);
   transform: rotate(45deg);
   animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
 }
@@ -255,80 +272,80 @@ p {
 }
 
 .orbit {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #fafbfC;
-	border-radius: 50%;
-} 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafbfC;
+  border-radius: 50%;
+}
 
 .earth-orbit {
-	width: 165px;
-	height: 165px;
+  width: 165px;
+  height: 165px;
   -webkit-animation: spin 12s linear 0s infinite;
 }
 
 .venus-orbit {
-	width: 120px;
-	height: 120px;
+  width: 120px;
+  height: 120px;
   -webkit-animation: spin 7.4s linear 0s infinite;
 }
 
 .mercury-orbit {
-	width: 90px;
-	height: 90px;
+  width: 90px;
+  height: 90px;
   -webkit-animation: spin 3s linear 0s infinite;
 }
 
 .planet {
-	position: absolute;
-	top: -5px;
+  position: absolute;
+  top: -5px;
   width: 10px;
   height: 10px;
-	border-radius: 50%;
+  border-radius: 50%;
   background-color: #3ff9dc;
 }
 
 .sun {
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: #ffab91;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffab91;
 }
 
 .leo {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .blue-orbit {
-	width: 165px;
-	height: 165px;
+  width: 165px;
+  height: 165px;
   border: 1px solid #91daffa5;
   -webkit-animation: spin3D 3s linear .2s infinite;
 }
 
 .green-orbit {
-	width: 120px;
-	height: 120px;
+  width: 120px;
+  height: 120px;
   border: 1px solid #91ffbfa5;
   -webkit-animation: spin3D 2s linear 0s infinite;
 }
 
 .red-orbit {
-	width: 90px;
-	height: 90px;
+  width: 90px;
+  height: 90px;
   border: 1px solid #ffca91a5;
   -webkit-animation: spin3D 1s linear 0s infinite;
 }
 
 .white-orbit {
-	width: 60px;
-	height: 60px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #ffffff;
   -webkit-animation: spin3D 10s linear 0s infinite;
 }
