@@ -13,7 +13,7 @@ function Header() {
             <Nav className="me-auto">
               {/* <Nav.Link to="home" href="Tiles">Home</Nav.Link>
               <Nav.Link to="opd" href="opd">About Us</Nav.Link> */}
-              <NavLink to='/'>home</NavLink>
+              <NavLink to='/cms'>home</NavLink>
               <NavLink to='/opd'>OPD</NavLink>
               <NavLink to='/UserData'>UserData</NavLink>
               <NavLink to='/About'>About</NavLink>

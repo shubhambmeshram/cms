@@ -15,7 +15,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Tiles />}></Route>
+        <Route path="/cms" element={<Tiles />}></Route>
         <Route path="/opd" element={<OpdDetails />}></Route>
         <Route
           path="/UserData"
